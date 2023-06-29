@@ -1,0 +1,19 @@
+.meal{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+}
+.meal h3{
+    margin: 0 0 4px 0;
+}
+.description{
+    font-style: oblique;
+}
+.price{
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: tomato;
+    font-size: 18px;
+}
