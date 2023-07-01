@@ -1,14 +1,17 @@
 import React from "react";
 import stylesheet from "./MealItem.module.css";
+import MealItemForm from "./MealItemForm";
 const MealItem = (props) => {
   const price = `₹ ${props.price.toFixed(2)}`;
   return (
     <li className={stylesheet.meal}>
       <div>
         <h3>{props.name}</h3>
-        <div className={stylesheet.description}>{props.description}</div>
+        <p className={stylesheet.description}>{props.description}</p>
+        <div className={stylesheet.price}> {price}</div>
       </div>
-      <div className={stylesheet.price}> {price}</div>
+
+      <MealItemForm />
     </li>
   );
 };

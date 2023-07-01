@@ -1,0 +1,36 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        align-items: flex-end;
+}
+.inputContainer{
+    font-weight: bold;
+    font-size: 18px;
+   
+    /* margin-bottom: 10px; */
+
+}
+.inputContainer input{
+    width: 60px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    
+}
+.formContainer button{
+   border: none;
+   outline: none;
+   padding: 10px 35px;
+   border-radius: 20px;
+   background-color: rgb(250, 72, 7);
+   color: white;
+   font-weight: bold;
+   
+}
+.formContainer button:hover{
+    background-color: rgb(240, 69, 7);
+}
