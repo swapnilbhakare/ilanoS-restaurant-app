@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import CartIcon from "../Cart/CartIcon.js";
 import stylesheet from "./HeaderButton.module.css";
-const HeaderButton = () => {
+const HeaderButton = (props) => {
   return (
     <>
-      <button className={stylesheet.button}>
+      <button className={stylesheet.button} onClick={props.onClick}>
         <span className={stylesheet.icon}>
           <CartIcon />
         </span>

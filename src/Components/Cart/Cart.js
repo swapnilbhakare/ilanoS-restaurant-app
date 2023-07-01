@@ -10,15 +10,20 @@ const Cart = (props) => {
     </ul>
   );
   return (
-    <Modal>
+    <Modal onHideCart={props.onHideCart}>
       {cartItems}
       <div className={stylesheet.total}>
         <span>Total Amount</span>
         <span>₹ 35.62</span>
       </div>
       <div className={stylesheet.actions}>
-        <button className={stylesheet["button--alt"]}>Close</button>
-        <button className={stylesheet.button}>Close</button>
+        <button
+          className={stylesheet["button--alt"]}
+          onClick={props.onHideCart}
+        >
+          Close
+        </button>
+        <button className={stylesheet.button}>Order</button>
       </div>
     </Modal>
   );
