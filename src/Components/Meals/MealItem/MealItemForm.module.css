@@ -1,36 +1,21 @@
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-        align-items: flex-end;
+.form{
+   text-align: center;
 }
-.inputContainer{
-    font-weight: bold;
-    font-size: 18px;
-   
-    /* margin-bottom: 10px; */
 
-}
-.inputContainer input{
-    width: 60px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid #000;
-    
-}
-.formContainer button{
-   border: none;
+.form button{
+    font: inherit;
+    cursor: pointer;
+   border: 1px solid rgb(250, 72, 7);
    outline: none;
-   padding: 10px 35px;
+   padding: 8px 32px;
    border-radius: 20px;
+    font-weight: bold;
    background-color: rgb(250, 72, 7);
    color: white;
-   font-weight: bold;
    
 }
-.formContainer button:hover{
+.form button:hover,.form button:active{
     background-color: rgb(240, 69, 7);
+    border-color:rgb(240, 69, 7) ;
+
 }
